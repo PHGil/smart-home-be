@@ -1,0 +1,21 @@
+name: Check Pull Request Description
+
+on:
+  pull_request:
+    types: [edited, synchronize]
+
+jobs:
+  check-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check checkboxes
+        run: |
+          PR_DESCRIPTION=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://atc-github.azure.cloud.bmw/api/v3/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}" | jq -r '.body')
+          UNCHECKED=$(echo "$PR_DESCRIPTION" | grep -c '\- \[ \]' || true)
+          if [ $UNCHECKED -gt 0 ]; then
+            echo "There are $UNCHECKED unchecked items in the pull request description"
+            exit 1
+          else
+            echo "All items in the pull request description are checked"
+          fi

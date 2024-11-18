@@ -13,7 +13,15 @@ release.properties
 bin/
 
 # IntelliJ
-.idea
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+.idea/libraries
+.idea/modules.xml
+.idea/compiler.xml
+.idea/misc.xml
+.idea/jarRepositories.xml
 *.ipr
 *.iml
 *.iws

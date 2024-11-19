@@ -26,6 +26,7 @@
         <com.puppycrawl.tools.version>10.3</com.puppycrawl.tools.version>
         <jacoco-maven-plugin.skip>false</jacoco-maven-plugin.skip>
         <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
+        <javax.validation.version>2.0.1.Final</javax.validation.version>
         <jacoco.complexity.coverage>0.80</jacoco.complexity.coverage>
         <jacoco.instruction.coverage>0.80</jacoco.instruction.coverage>
         <jacoco.branch.coverage>0.80</jacoco.branch.coverage>
@@ -144,6 +145,13 @@
             <artifactId>log4j2-jboss-logmanager</artifactId>
             <version>${log4j2.jboss.logmanager.version}</version>
         </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${javax.validation.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

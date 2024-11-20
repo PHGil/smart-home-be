@@ -18,7 +18,7 @@ public class Location {
 
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "Address is mandatory")
     private String address;
 
     @Pattern(regexp = "^[A-Za-z0-9][A-Za-z0-9\\- ]{2,9}$")

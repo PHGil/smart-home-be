@@ -13,4 +13,8 @@ public interface RoomMapper {
     RoomTO toTO(Room room);
 
     List<RoomTO> toTO(List<Room> rooms);
+
+    Room toDomain(RoomTO room);
+
+    List<Room> toDomain(List<RoomTO> rooms);
 }

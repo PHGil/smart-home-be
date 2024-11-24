@@ -4,9 +4,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: ${DB_USER:-sm_user}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-sm_password}
-      POSTGRES_DB: ${DB_NAME:-sm_local}
+      POSTGRES_USER: ${DB_USER:-user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+      POSTGRES_DB: ${DB_NAME:-local}
     volumes:
       - runtime-postgres:/data/postgres
     restart: unless-stopped

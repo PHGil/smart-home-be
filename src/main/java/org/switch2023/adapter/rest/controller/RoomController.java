@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.switch2023.adapter.rest.mapper.RoomMapper;
 import org.switch2023.adapter.rest.to.RoomTO;
 import org.switch2023.application.port.in.RoomUseCases;
+import org.switch2023.domain.exception.NotFoundException;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class RoomController implements RoomRouter {
         return this.mapper.toTO(this.service.findAll());
     }
 
-    public RoomTO findRoomById(final Long id) {
+    public RoomTO findRoomById(final Long id) throws NotFoundException {
         return this.mapper.toTO(this.service.findById(id));
     }
 }

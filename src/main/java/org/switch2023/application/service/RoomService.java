@@ -4,6 +4,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import lombok.RequiredArgsConstructor;
 import org.switch2023.application.port.in.RoomUseCases;
 import org.switch2023.application.port.out.DomainRoomRepository;
+import org.switch2023.domain.exception.NotFoundException;
 import org.switch2023.domain.room.Room;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class RoomService implements RoomUseCases {
         return this.repository.findAll();
     }
 
-    public Room findById(final Long id) {
+    public Room findById(final Long id) throws NotFoundException {
         return this.repository.findById(id);
     }
 }

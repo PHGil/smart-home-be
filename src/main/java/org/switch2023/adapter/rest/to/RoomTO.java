@@ -19,7 +19,11 @@ public class RoomTO {
 
     private int floorNumber;
 
-    private List<Long> dimensions;
+    private Long length;
+
+    private Long width;
+
+    private Long height;
 
     private boolean isInside;
 

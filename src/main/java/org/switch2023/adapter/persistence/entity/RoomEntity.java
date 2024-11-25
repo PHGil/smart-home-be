@@ -33,7 +33,7 @@ public class RoomEntity {
     private String name;
 
     @Column(name = "floor_number")
-    private int floorNumber;
+    private Integer floorNumber;
 
     @Column(name = "length")
     private Long length;
@@ -45,7 +45,7 @@ public class RoomEntity {
     private Long height;
 
     @Column(name = "is_inside")
-    private boolean isInside;
+    private Boolean isInside;
 
     @OneToMany(mappedBy = "room", cascade = {CascadeType.DETACH, CascadeType.REFRESH})
     @ToString.Exclude

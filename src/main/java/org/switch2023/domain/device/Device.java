@@ -1,11 +1,10 @@
 package org.switch2023.domain.device;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotBlank;
 
 @Data
 @Builder
@@ -20,6 +19,6 @@ public class Device {
 
     private String model;
 
-    private boolean isActivate;
+    private boolean isActive;
 
 }

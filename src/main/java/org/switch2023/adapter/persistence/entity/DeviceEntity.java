@@ -30,8 +30,8 @@ public class DeviceEntity {
     @Column(name = "model")
     private String model;
 
-    @Column(name = "is_activate")
-    private boolean isActivate;
+    @Column(name = "is_active")
+    private boolean isActive;
 
     @ManyToOne
     @JoinColumn(name = "room_id", updatable = false, nullable = false)

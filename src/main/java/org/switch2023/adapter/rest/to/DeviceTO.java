@@ -17,5 +17,5 @@ public class DeviceTO {
 
     private String model;
 
-    private boolean isActivate;
+    private boolean isActive;
 }

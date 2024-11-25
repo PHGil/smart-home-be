@@ -19,6 +19,7 @@ public interface RoomMapper {
 
     List<Room> toModel(List<RoomEntity> entities);
 
+    @Mapping(target = "id", ignore = true)
     @Mapping(target = "devices", qualifiedByName = "deviceToDeviceEntity")
     RoomEntity toEntity(Room room);
 

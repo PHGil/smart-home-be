@@ -17,7 +17,7 @@ public class RoomTO {
 
     private String name;
 
-    private int floorNumber;
+    private Integer floorNumber;
 
     private Long length;
 
@@ -25,7 +25,7 @@ public class RoomTO {
 
     private Long height;
 
-    private boolean isInside;
+    private Boolean isInside;
 
     private List<DeviceTO> devices;
 }

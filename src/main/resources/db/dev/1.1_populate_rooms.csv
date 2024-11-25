@@ -1,0 +1,11 @@
+name;floor_number;length;width;height;is_inside
+LivingRoom;0;6;5;2.8;true
+Kitchen;0;4;3;2.8;true
+MasterBedroom;1;5;4;2.8;true
+GuestBedroom;1;4;3.5;2.8;true
+Bathroom;1;3;2.5;2.8;true
+DiningRoom;0;4.5;3.5;2.8;true
+Garage;0;6;4;3;false
+Backyard;0;15;10;0;false
+Attic;2;8;4;2;true
+FrontPorch;0;5;2;3;false

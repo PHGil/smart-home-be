@@ -6,6 +6,24 @@ If you want to learn more about Quarkus, please visit its website: <https://quar
 
 ## UseCases
 
+- [ ] US01 As an Administrator, I want to configure the location of the house.
+- [ ] US02 As an Administrator, I want to add a new room to the house, in order to configure it (name, house floor and
+  dimensions).
+- [x] US03 As an Administrator, I want to have a list of existing rooms, so that I can choose
+  one to edit it.
+- [ ] US04 As an Administrator, I want to define a sensor type.
+- [ ] US05v2 As a Power User [or Administrator], I want to add a new device to a room, in
+  order to configure it.
+- [ ] US06 As a Room Owner [or Power User, or Administrator], I want to get a list of all
+  devices in a room, so that I can configure them.
+- [ ] US07 As a Power User [or Administrator], I want to add a sensor to an existing device in
+  a room. The sensor must be of a model of an existing type of sensor.
+- [ ] US08 As a Power User [or Administrator], I want to deactivate a device, so that it is no
+  longer used. Nevertheless, it should be possible to access its configuration and
+  activity log.
+- [ ] US09 As a Power User [or Administrator], I want to get a list of all devices in a house,
+  grouped by device functionality types. It must include device location.
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:

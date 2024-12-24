@@ -22,7 +22,7 @@ bin/
 .idea/compiler.xml
 .idea/misc.xml
 .idea/jarRepositories.xml
-.idea/dataSources
+.idea/dataSources.xml
 .idea/dataSources.local.xml
 .idea/sonarlint.xml
 *.ipr

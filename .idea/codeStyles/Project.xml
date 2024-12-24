@@ -1,11 +1,12 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
     <JavaCodeStyleSettings>
-      <option name="ANNOTATION_PARAMETER_WRAP" value="1" />
+      <option name="ANNOTATION_PARAMETER_WRAP" value="5" />
+      <option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
       <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="9999" />
       <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="9999" />
     </JavaCodeStyleSettings>
-    <SqlCodeStyleSettings version="6">
+    <SqlCodeStyleSettings version="7">
       <option name="KEYWORD_CASE" value="2" />
       <option name="IDENTIFIER_CASE" value="1" />
       <option name="TYPE_CASE" value="3" />
@@ -15,9 +16,7 @@
     </SqlCodeStyleSettings>
     <codeStyleSettings language="JAVA">
       <option name="KEEP_LINE_BREAKS" value="false" />
-      <option name="CLASS_BRACE_STYLE" value="5" />
       <option name="WHILE_ON_NEW_LINE" value="true" />
-      <option name="SPECIAL_ELSE_IF_TREATMENT" value="false" />
       <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
       <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
       <option name="ALIGN_MULTILINE_THROWS_LIST" value="true" />
@@ -34,7 +33,6 @@
       <option name="EXTENDS_LIST_WRAP" value="1" />
       <option name="THROWS_LIST_WRAP" value="1" />
       <option name="EXTENDS_KEYWORD_WRAP" value="1" />
-      <option name="THROWS_KEYWORD_WRAP" value="1" />
       <option name="METHOD_CALL_CHAIN_WRAP" value="2" />
       <option name="WRAP_FIRST_METHOD_IN_CALL_CHAIN" value="true" />
       <option name="BINARY_OPERATION_WRAP" value="1" />
@@ -43,8 +41,9 @@
       <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
       <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
       <option name="FOR_STATEMENT_WRAP" value="1" />
+      <option name="IF_BRACE_FORCE" value="3" />
       <option name="PARAMETER_ANNOTATION_WRAP" value="1" />
-      <option name="VARIABLE_ANNOTATION_WRAP" value="1" />
+      <option name="VARIABLE_ANNOTATION_WRAP" value="5" />
       <option name="KEEP_BUILDER_METHODS_INDENTS" value="true" />
       <option name="WRAP_ON_TYPING" value="0" />
     </codeStyleSettings>

@@ -13,9 +13,9 @@
             <column header="id" name="id" type="NUMERIC"/>
             <column header="name" name="name" type="STRING"/>
             <column header="floor_number" name="floor_number" type="NUMERIC"/>
-            <column header="length" name="length" type="NUMERIC"/>
-            <column header="width" name="width" type="NUMERIC"/>
-            <column header="height" name="height" type="NUMERIC"/>
+            <column header="length" name="length" type="BIGINT"/>
+            <column header="width" name="width" type="BIGINT"/>
+            <column header="height" name="height" type="BIGINT"/>
             <column header="is_inside" name="is_inside" type="BOOLEAN"/>
         </loadUpdateData>
     </changeSet>

@@ -17,6 +17,10 @@ public class RoomController implements RoomRouter {
 
     private final RoomMapper mapper;
 
+    public RoomTO createRoom(final RoomTO room) {
+        return this.mapper.toTO(this.service.save(this.mapper.toDomain(room)));
+    }
+
     public List<RoomTO> findRooms() {
         return this.mapper.toTO(this.service.findAll());
     }

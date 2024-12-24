@@ -22,4 +22,8 @@ public class RoomService implements RoomUseCases {
     public Room findById(final Long id) throws NotFoundException {
         return this.repository.findById(id);
     }
+
+    public Room save(final Room room) {
+        return this.repository.create(room);
+    }
 }

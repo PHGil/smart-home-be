@@ -11,4 +11,5 @@ public interface DomainRoomRepository {
 
     Room findById(final Long id) throws NotFoundException;
 
+    Room create(final Room room);
 }

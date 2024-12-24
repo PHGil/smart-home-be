@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @NoArgsConstructor
@@ -26,6 +24,4 @@ public class RoomTO {
     private Long height;
 
     private Boolean isInside;
-
-    private List<DeviceTO> devices;
 }

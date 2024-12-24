@@ -36,13 +36,13 @@ public class RoomEntity {
     private Integer floorNumber;
 
     @Column(name = "length")
-    private Long length;
+    private Float length;
 
     @Column(name = "width")
-    private Long width;
+    private Float width;
 
     @Column(name = "height")
-    private Long height;
+    private Float height;
 
     @Column(name = "is_inside")
     private Boolean isInside;

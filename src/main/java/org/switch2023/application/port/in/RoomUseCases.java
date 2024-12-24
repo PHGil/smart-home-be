@@ -12,4 +12,5 @@ public interface RoomUseCases {
 
     Room findById(final Long id) throws NotFoundException;
 
+    Room save(final Room room);
 }

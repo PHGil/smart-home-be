@@ -3,9 +3,9 @@ CREATE TABLE room
     id           BIGSERIAL PRIMARY KEY,
     name         VARCHAR(255) NOT NULL,
     floor_number INTEGER      NOT NULL,
-    length       FLOAT        NOT NULL DEFAULT 0,
-    width        FLOAT        NOT NULL DEFAULT 0,
-    height       FLOAT        NOT NULL DEFAULT 0,
+    length       FLOAT,
+    width        FLOAT,
+    height       FLOAT,
     is_inside    BOOLEAN
 );
 

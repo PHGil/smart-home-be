@@ -10,6 +10,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 @Data
@@ -35,5 +36,6 @@ public class DeviceEntity {
 
     @ManyToOne
     @JoinColumn(name = "room_id", updatable = false, nullable = false)
+    @ToString.Exclude
     private RoomEntity room;
 }

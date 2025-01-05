@@ -47,7 +47,7 @@ public class RoomEntity {
     @Column(name = "is_inside")
     private Boolean isInside;
 
-    @OneToMany(mappedBy = "room", cascade = {CascadeType.DETACH, CascadeType.REFRESH})
+    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
     @ToString.Exclude
     @Builder.Default
     private List<DeviceEntity> devices = new ArrayList<>();

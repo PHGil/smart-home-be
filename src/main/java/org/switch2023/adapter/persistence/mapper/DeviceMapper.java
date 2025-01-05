@@ -1,5 +1,6 @@
 package org.switch2023.adapter.persistence.mapper;
 
+import org.mapstruct.Builder;
 import org.mapstruct.CollectionMappingStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
@@ -9,7 +10,8 @@ import org.switch2023.domain.device.Device;
 import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.JAKARTA_CDI,
-        collectionMappingStrategy = CollectionMappingStrategy.TARGET_IMMUTABLE)
+        collectionMappingStrategy = CollectionMappingStrategy.TARGET_IMMUTABLE,
+        builder = @Builder(disableBuilder = true))
 public interface DeviceMapper {
 
     Device toModel(DeviceEntity entity);

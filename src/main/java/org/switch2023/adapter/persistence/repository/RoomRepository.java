@@ -24,7 +24,7 @@ public class RoomRepository implements DomainRoomRepository {
     private final RoomMapper mapper;
 
     @Override
-    public Room findById(Long id) throws NotFoundException {
+    public Room findById(final Long id) throws NotFoundException {
         return this.mapper.toModel(this.panacheRepository
                 .findByIdOptional(id)
                 .orElseThrow(() -> new NotFoundException(Room.class, id)));
@@ -32,7 +32,7 @@ public class RoomRepository implements DomainRoomRepository {
 
     @Override
     @Transactional
-    public Room create(Room room) {
+    public Room create(final Room room) {
         final RoomEntity roomEntity = this.mapper.toEntity(room);
         this.panacheRepository.persistAndFlush(roomEntity);
         log.info("Room created: '{}'.", roomEntity.getId());
